@@ -1,12 +1,23 @@
-import  './categories.styles.scss';
-import CategoryContainer from './components/category-menu/CategoryContainer';
-import data from './components/data/Data.json';
+import React from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import Home from './routes/home/Home';
+import Navigation from './routes/navigation/Navigation'
+
+export const Shop = () => {
+  return <h1>This is the shop page</h1>
+}
+
 
 const App = () => {
-  const categories = data.categories;
   return (
-    <CategoryContainer categories = {categories} />
-  );
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route index element = {<Home />} />
+        <Route path='/shop' element = {<Shop />}/>
+      </Route>
+
+    </Routes>
+  )
 }
 
 export default App;
