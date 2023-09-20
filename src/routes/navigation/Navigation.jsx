@@ -1,21 +1,24 @@
 import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
+import "./nav.scss";
 
 const Navigation = () => {
     return (
       <Fragment>
+        <>
         <div className="navigation">
           <Link className="logo-container" to='/'>
-            <div>Logo</div>
+            <div>Home</div>
           </Link>
 
           <div className="nav-links-container">
             <Link className="nav-link" to='/shop'>
-            SHOP
+            Shop
             </Link>
           </div>
-          <Outlet />
         </div> 
+          <Outlet />
+        </>
       </Fragment>
     )
   }
