@@ -1,7 +1,7 @@
 import  '../../categories.styles.scss';
 import CategoryContainer from '../../components/category-menu/CategoryContainer';
 import data from '../../components/data/Data.json';
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   const categories = data.categories;
