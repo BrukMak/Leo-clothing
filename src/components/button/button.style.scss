@@ -14,9 +14,11 @@
     border: none;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 5px;
     
+    
+   
   
     &:hover {
       background-color: white;
@@ -27,6 +29,16 @@
     &.google-sign-in {
       background-color: #4285f4;
       color: white;
+      justify-content: space-between;
+
+      .button-image{
+        display: flex;
+        width: 30px;
+        margin: 10px auto;
+
+        
+      }
+      
   
       &:hover {
         background-color: #357ae8;
