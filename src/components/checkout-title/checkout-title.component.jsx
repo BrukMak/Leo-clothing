@@ -1,14 +1,15 @@
-import "./checkout-title.style.scss";
+// import "./checkout-title.style.scss ";
+import { TitleContainer } from './checkout-title.style';
 
 const CheckoutTitle = () => {
     return(
-        <div className="title-container">
+        <TitleContainer>
             <span>Products</span>
             <span>Description</span>
             <span>Quantity</span>
             <span>Price</span>
             <span>Remove</span>
-        </div>
+        </TitleContainer>
     )
 }
 export default  CheckoutTitle;

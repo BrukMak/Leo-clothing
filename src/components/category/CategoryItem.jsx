@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
-import {CategoryContainer, BackgroundImage, CategoryBodyContainer, p, h2} from './category-item.style.jsx';
+import {CategoryContainer, BackgroundImage, Body} from './category-item.style.jsx';
 import React from 'react';
 
 const CategoryItem = ({ category }) => {
   const { imageUrl, title} = category;
     return (
-    <CategoryContainer>
-          <BackgroundImage style={{
-            backgroundImage: `url(${imageUrl})`
-            }}/>
-          <CategoryBodyContainer>
+      // <Link to={"shop/" + title.toLowerCase()}>
+        <CategoryContainer to={"shop/" + title.toLowerCase()}>
+          <BackgroundImage imageUrl = {imageUrl}/>
+          <Body>
             
             <h2>
               <Link to={"shop/" + title.toLowerCase()}>
@@ -17,8 +16,9 @@ const CategoryItem = ({ category }) => {
               </Link>
               </h2>
             <p>Shop Now</p>
-          </CategoryBodyContainer>
+          </Body>
         </CategoryContainer>
+      // </Link>
   )
 }
 export default CategoryItem;

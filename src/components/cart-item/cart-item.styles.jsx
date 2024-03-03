@@ -22,6 +22,7 @@ export const Name = styled.div`
   font-size: 16px;
 `
 
+
 // .cart-item-container {
 //     width: 100%;
 //     display: flex;
@@ -44,5 +45,5 @@ export const Name = styled.div`
 //         font-size: 16px;
 //       }
 //     }
-//   }
+// }
   

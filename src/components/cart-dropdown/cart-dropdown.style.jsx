@@ -20,7 +20,7 @@ export const EmptyMessage = styled.span`
   margin: 50px auto;
 ` 
 
-export const CartItems = styled.div `
+export const CartItemsStyle = styled.div `
 height: 240px;
 display: flex;
 flex-direction: column;
@@ -28,9 +28,10 @@ overflow: scroll;
 
 `
 
-export const Button  = styled.div`
+export const Button_  = styled.div`
   margin-top: auto;
 `
+
 // .cart-dropdown-container {
 //     position: absolute;
 //     width: 270px;

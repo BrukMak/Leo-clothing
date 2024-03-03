@@ -14,4 +14,4 @@ const CheckoutItemList = () => {
     )
 }
 
-export default CheckoutItemList; 
+export default CheckoutItemList;

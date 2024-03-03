@@ -19,7 +19,7 @@ export const Logo = styled(LeoLogo) `
   height: 60px;
 `
 
-export const NavLinks = styled.div`
+export const NavLinks = styled(Link)`
   width: 50%;
   height: 100%;
   display: flex;

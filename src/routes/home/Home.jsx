@@ -1,4 +1,4 @@
-import  '../../categories.styles.scss';
+// import  '../../categories.styles.scss';
 import CategoryContainer from '../../components/category-menu/CategoryContainer';
 import data from '../../components/data/Data.json';
 import { Route, Routes } from 'react-router-dom';
